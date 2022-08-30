@@ -36,10 +36,7 @@ const BingSearch = () => {
         const data = response.data;
         if ("webPages" in data) {
                       
-            
               setSearchResults(data.webPages.value);
-               
-             
               setAddress(data.webPages.value[0].displayUrl);
               setSnippet(data.webPages.value[0].snippet);
               setWebPageName(data.webPages.value[0].name);
@@ -77,8 +74,8 @@ const BingSearch = () => {
                 
                 <a href={address}><h3>{webPageName}</h3> </a>
                 <p>{address}</p>
-                <p>{snippet}</p>
-                <h2>First changes in branch</h2>
+                <p >{snippet}</p>
+                <h2>First commit in branch</h2>
             </div>
        
          
